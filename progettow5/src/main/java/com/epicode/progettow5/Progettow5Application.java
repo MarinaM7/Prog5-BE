@@ -49,7 +49,7 @@ public class Progettow5Application implements CommandLineRunner {
 			insertEdifici();
 		}
 		
-		boolean insertPostazioni = false;
+		boolean insertPostazioni = true;
 		if( insertPostazioni ) {
 			insertPostazioni();
 		}
@@ -64,7 +64,7 @@ public class Progettow5Application implements CommandLineRunner {
 			insertPrenotazioni();
 		}
 		
-		findByType(TipoPostazione.PRIVATO);
+		//findByType(TipoPostazione.PRIVATO);
 		
 		((AnnotationConfigApplicationContext)ctx).close();
 	}
